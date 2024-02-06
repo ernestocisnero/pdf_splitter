@@ -1,9 +1,13 @@
-import tkinter as tk
+import customtkinter
 from modules.PDFSplitter import PDFSplitter
 
+customtkinter.set_appearance_mode("dark") # light, system
+customtkinter.set_default_color_theme("green") # blue, green, dark-blue 
+
+
 if __name__ == "__main__":
-    root = tk.Tk()
-    root.geometry("250x250")
+    root=customtkinter.CTk()
+    root.geometry("200x200")
     app = PDFSplitter(root)
     root.mainloop()
 
